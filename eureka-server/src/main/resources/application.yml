@@ -3,25 +3,23 @@ server:
 
 eureka:
   client:
-    #ÊÇ·ñ½«×Ô¼º×¢²áµ½Eureka Server£¬Ä¬ÈÏÎªtrue
+    #æ˜¯å¦å°†è‡ªå·±æ³¨å†Œåˆ°Eureka Serverï¼Œé»˜è®¤ä¸ºtrue
     register-with-eureka: false
-    #±íÊ¾ÊÇ·ñ´ÓEureka Server»ñÈ¡×¢²áĞÅÏ¢£¬Ä¬ÈÏÎªtrue¡£ÒòÎªÕâÊÇÒ»¸öµ¥µãµÄEureka Server£¬²»ĞèÒªÍ¬²½ÆäËûµÄEureka Server½ÚµãµÄÊı¾İ£¬¹Ê¶øÉèÖÃÎªfalse
+    #è¡¨ç¤ºæ˜¯å¦ä»Eureka Serverè·å–æ³¨å†Œä¿¡æ¯ï¼Œé»˜è®¤ä¸ºtrueã€‚å› ä¸ºè¿™æ˜¯ä¸€ä¸ªå•ç‚¹çš„Eureka Serverï¼Œä¸éœ€è¦åŒæ­¥å…¶ä»–çš„Eureka ServerèŠ‚ç‚¹çš„æ•°æ®ï¼Œæ•…è€Œè®¾ç½®ä¸ºfalse
     fetch-registry: false
-    #ÉèÖÃÓëEureka Server½»»¥µÄµØÖ·£¬²éÑ¯·şÎñºÍ×¢²á·şÎñ¶¼ĞèÒªÒÀÀµÕâ¸öµØÖ·£¬¶à¸öµØÖ·¿ÉÓÃ£¬ÓÃ","·Ö¸î
+    #è®¾ç½®ä¸Eureka Serveräº¤äº’çš„åœ°å€ï¼ŒæŸ¥è¯¢æœåŠ¡å’Œæ³¨å†ŒæœåŠ¡éƒ½éœ€è¦ä¾èµ–è¿™ä¸ªåœ°å€ï¼Œå¤šä¸ªåœ°å€å¯ç”¨ï¼Œç”¨","åˆ†å‰²
     #service-url:
       #defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
   instance:
     hostname: localhost
   server:
-    #¹Ø±Õ×ÔÎÒ±£»¤
+    #å…³é—­è‡ªæˆ‘ä¿æŠ¤
     enable-self-preservation: false
-    #ÇåÀí¼ä¸ô£¨µ¥Î»ºÁÃë£¬Ä¬ÈÏÊÇ60*1000£©
+    #æ¸…ç†é—´éš”ï¼ˆå•ä½æ¯«ç§’ï¼Œé»˜è®¤æ˜¯60*1000ï¼‰
     eviction-interval-timer-in-ms: 20000
 
 
 spring:
   profiles:
-    #ÒıÈëÅäÖÃ
+    #å¼•å…¥é…ç½®
     include: base
-
-

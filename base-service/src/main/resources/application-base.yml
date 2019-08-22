@@ -5,6 +5,6 @@ logging:
 
 eureka:
   client:
-    ##ÉèÖÃÓëEureka Server½»»¥µÄµØÖ·£¬²éÑ¯·þÎñºÍ×¢²á·þÎñ¶¼ÐèÒªÒÀÀµÕâ¸öµØÖ·£¬¶à¸öµØÖ·¿ÉÓÃ£¬ÓÃ","·Ö¸î
+    ##è®¾ç½®ä¸ŽEureka Serveräº¤äº’çš„åœ°å€ï¼ŒæŸ¥è¯¢æœåŠ¡å’Œæ³¨å†ŒæœåŠ¡éƒ½éœ€è¦ä¾èµ–è¿™ä¸ªåœ°å€ï¼Œå¤šä¸ªåœ°å€å¯ç”¨ï¼Œç”¨","åˆ†å‰²
     service-url:
       defaultZone: http://localhost:8761/eureka/
